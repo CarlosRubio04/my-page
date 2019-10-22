@@ -18,14 +18,21 @@ export const Nav = styled.nav`
         justify-content: space-between; 
         padding: 10px 20px;
 
+        a {
+            color: #3c4245;
+            text-decoration: none;
+        }
+        
         ul {
             list-style: none;
             display: flex;
             li {
                 margin: 0 10px;
                 a {
-                    color: #fff;
+                    color: #3c4245;
                     text-decoration: none;
+                    font-weight: 600;
+                    font-size: 12px;
                 }
             }
         }

@@ -7,7 +7,8 @@ export const GlobalStyles = createGlobalStyle`
     }
     body {
         margin: 0;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        color: #3c4245;
     }
     input, select {
         display: block;
@@ -32,11 +33,23 @@ export const GlobalStyles = createGlobalStyle`
     }
     .Home {
         position: relative;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #23374d;
+        background-color: #fff;
+
+        &_Container {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-weight: 300;
+                font-size: 48px;
+                opacity: .5;
+                transition: all .5s ease-in-out;
+                animation: fadeIn 1s ease-in-out .5s forwards;
+            }
+        }
     }
 
     .Main-Button {
@@ -51,6 +64,11 @@ export const GlobalStyles = createGlobalStyle`
         width: 100%;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-weight: 600;
+        font-weight: 300;
+    }
+
+    @keyframes fadeIn {
+        from{opacity: .5;}
+        to{opacity: 1;}
     }
 `

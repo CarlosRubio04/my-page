@@ -1,21 +1,29 @@
 import styled from 'styled-components'
 
 export const Counter = styled.div`
-    position: relative;
-    
+    background-color: #000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+
     .Container {
         color: #fff;
         position: relative; 
-        border-right: 2px solid rgba(255,255,255,.75);
-        font-size: 40px;
+        font-size: 22px;
         text-align: center;
         white-space: nowrap;
-        overflow: hidden;
-        transform: translateY(-60%);  
+        overflow: hidden;  
         padding-right: 3px;  
         letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: 600;
+        transform: translateY(-60%);
+        font-family: 'Roboto Slab', serif;
+        border-right: 2px solid rgba(255,255,255,.75);
     }
 
     /* Animation */

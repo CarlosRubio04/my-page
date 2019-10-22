@@ -4,7 +4,7 @@ import { Counter } from './styles'
 export const CounterDown = ({ message }) => {
   return (
     <Counter>
-      <div className='Container line-1 anim-typewriter'>
+      <div className='Container anim-typewriter'>
         { message }
       </div>
     </Counter>

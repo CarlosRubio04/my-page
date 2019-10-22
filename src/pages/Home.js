@@ -10,7 +10,7 @@ export const Home = () => {
   }, [])
 
   const LogicCounter = () => {
-    const welcome = 'Hola, Bienvenidos a mi página'
+    const welcome = 'Hola, Bienvenidos'
     const world = welcome.split('')
     let offset = 0
     let fullWorld = ''
@@ -29,17 +29,13 @@ export const Home = () => {
 
   if (loading) {
     return (
-      <div className='Home'>
-        <div className='Home_Container'>
-          <CounterDown message={textLoading} />
-        </div>
-      </div>
+      <CounterDown message={textLoading} />
     )
   }
   return (
     <div className='Home'>
       <div className='Home_Container'>
-        Hola
+        <h1>Soy Carlos Rubio, Front end Developer.</h1>
       </div>
     </div>
   )
