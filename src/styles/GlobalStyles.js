@@ -48,6 +48,7 @@ export const GlobalStyles = createGlobalStyle`
                 opacity: .5;
                 transition: all .5s ease-in-out;
                 animation: fadeIn 1s ease-in-out .5s forwards;
+                text-align: center;
             }
         }
     }
